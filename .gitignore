@@ -1,23 +1,17 @@
-.gradle
+HELP.md
 *.sw?
 .#*
 *#
 *~
-/build
 /code
-.classpath
-.project
-.settings
 .svntemp
 .metadata
 .factorypath
 .recommenders
 bin
-build
 lib/
 target
 .factorypath
-.springBeans
 interpolated*.xml
 dependency-reduced-pom.xml
 build.log
@@ -28,17 +22,34 @@ MANIFEST.MF
 settings.xml
 activemq-data
 overridedb.*
-*.iml
-*.ipr
-*.iws
-.idea
 *.jar
 .DS_Store
 .svn
 *.svntmp
-.factorypath
 dump.rdb
 transaction-logs
+!**/src/main/**
+!**/src/test/**
+
+### Gradle ###
+.gradle
+!gradle/wrapper/gradle-wrapper.jar
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
 
 #
 # Project specific excludes
@@ -78,7 +89,7 @@ target/
 .classpath
 .project
 
-# NetBeans specific
+### NetBeans ###
 build/
 nbbuild/
 nbproject/
@@ -87,7 +98,10 @@ nbdist/
 build.xml
 nbactions.xml
 nb-configuration.xml
+/.nb-gradle/
 
+### VS Code ###
+.vscode/
 
 # OS
 .DS_Store
