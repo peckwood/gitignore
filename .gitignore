@@ -31,6 +31,9 @@ transaction-logs
 !**/src/main/**
 !**/src/test/**
 
+### git ###
+*.orig
+
 ### Gradle ###
 .gradle
 !gradle/wrapper/gradle-wrapper.jar
