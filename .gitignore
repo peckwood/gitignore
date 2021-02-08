@@ -10,7 +10,7 @@ HELP.md
 .recommenders
 bin
 lib/
-target
+target/
 .factorypath
 interpolated*.xml
 dependency-reduced-pom.xml
@@ -22,7 +22,9 @@ MANIFEST.MF
 settings.xml
 activemq-data
 overridedb.*
-*.jar
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
 .DS_Store
 .svn
 *.svntmp
